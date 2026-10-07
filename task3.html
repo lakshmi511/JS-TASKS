@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function vowel(){
+            let ch=(document.getElementById("one").value);
+            if(ch=="A"||ch=="E"||ch=="I"||ch=="O"||ch=="U")
+        {
+            document.getElementById("res").value="vowel";
+
+        }
+        else{
+            document.getElementById("res").value="Not a vowel";
+        }
+        
+    }
+    </script>
+    <script>
+        function range(){
+        let n=document.getElementById("two").value;
+        if(n>=1 && n<=10){
+            document.getElementById("res1").value="n is between 1 to 10"
+        }
+        else{
+            document.getElementById("res1").value="n is not between 1 to 10"
+        }
+    }
+    </script>
+    <script>
+        function alphabet(){
+            let ch=document.getElementById("third").value;
+            if((ch>="a"&&ch<="z")||(ch>="A" && ch<="Z")){
+                document.getElementById("res3").value="alphabet"
+            }
+            else{
+                document.getElementById("res3").value="not a alphabet"
+            }
+        }
+    </script>
+    <script>
+        function alphabetrange(){
+            let ch=document.getElementById("four").value;
+            if(ch>="A" && ch<="Z"){
+                document.getElementById("res4").value="character is lies between A to Z";
+            }
+            else
+            {
+              
+                document.getElementById("res4").value="character is  not lies between A to Z"  ;
+            }
+        }
+    </script>
+    <script>
+        function lowercase(){
+            let ch=document.getElementById("five").value;
+            if(ch>="a" && ch<="z"){
+                document.getElementById("res5").value="Lowercase";
+            }
+            else{
+                 document.getElementById("res5").value=" Not Lowercase";
+
+            }
+        }
+    </script>
+    <script>
+        function digit(){
+            let n=document.getElementById("six").value;
+            if(n>="-9" && n<="9"){
+                document.getElementById("res6").value=" n is a digit";
+            }
+            else{
+                 document.getElementById("res5").value=" Not  a digit";
+
+            }
+        }
+    </script>
+    <script>
+        function loginform(){
+            // let name="hero";
+            // let password="hero@123";
+            let name=document.getElementById("seven").value;
+            let password=document.getElementById("eight").value;
+            if(name=="hero" && password == "hero@123"){
+                document.getElementById("res7").value=" Login Successfully🎉🎉🎉";
+            }
+            else{
+                 document.getElementById("res7").value="Invalid credentials👎👎";
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>write the code to check given character is vowel or not</h1>
+    <br>
+    <label for="">Enter a input as character</label>
+    <input type="text" placeholder="character" id="one">
+    <br>
+    <label for="">Result</label>
+    <input type="text" id="res">
+    <button onclick="vowel()">Result</button>
+    <br>
+    <br>
+    <h1>check given number is between 1 to 10</h1>
+    <br>
+    <label for="">Enter a value</label>
+    <input type="text" placeholder="value" id="two">
+    <br>
+    <label for="">Result</label>
+    <input type="text" placeholder="Result" id="res1">
+    <button onclick="range()">Result</button>
+    <br>
+    <br>
+    <h1>Check given character is alphabet or not</h1>
+     <label for="">Enter a character</label>
+    <input type="text" placeholder="value" id="third">
+    <br>
+    <label for="">Result</label>
+    <input type="text" placeholder="Result" id="res3">
+    <button onclick="alphabet()">Result</button>
+    <br>
+    <br>
+     <h1>Check given alphabet is between A to Z</h1>
+     <label for="">Enter a character</label>
+    <input type="text" placeholder="value" id="four">
+    <br>
+    <label for="">Result</label>
+    <input type="text" placeholder="Result" id="res4">
+    <button onclick="alphabetrange()">Result</button>
+    <br>
+    <br>
+    <h1>Check given alphabet is lowercase or not</h1>
+     <label for="">Enter a character</label>
+    <input type="text" placeholder="value" id="five">
+    <br>
+    <label for="">Result</label>
+    <input type="text" placeholder="Result" id="res5">
+    <button onclick="lowercase()">Result</button>
+    <br>
+    <br>
+     <h1>Check given value is digit or not</h1>
+     <label for="">Enter a value</label>
+    <input type="text" placeholder="value" id="six">
+    <br>
+    <label for="">Result</label>
+    <input type="text" placeholder="Result" id="res6">
+    <button onclick="digit()">Result</button>
+    <br>
+    <br>
+     <h1>write a prgm for login if name is hero & password ishero@123</h1>
+     <label for="">Enter a name</label>
+    <input type="text" placeholder="value" id="seven">
+    <br>
+    <label for="">Enter a password</label>
+    <input type="text" placeholder="value" id="eight">
+    <br>
+    <label for="">Result</label>
+    <input type="text" placeholder="Result" id="res7">
+    <button onclick="loginform()">Result</button>
+    <br>
+    <br>
+     
+    
+    
+     
+    
+    
+</body>
+</html>
